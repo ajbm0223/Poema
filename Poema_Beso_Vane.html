@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poema Animado</title>
+    <style>
+        body {
+            background-color: #e0f7fa; /* Color turquesa claro */
+            color: #4a148c; /* Color violeta */
+            font-family: 'Georgia', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .poema {
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco translúcido */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 600px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .mariposa {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-image: url('Mariposas 36.gif'); /* "C:\Users\abenitez\Desktop\Poema_Beso\Mariposas 36.gif */
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes flutter1 {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+            25% {
+                transform: translate(40vw, 10vh) rotate(90deg);
+            }
+            50% {
+                transform: translate(80vw, 50vh) rotate(180deg);
+            }
+            75% {
+                transform: translate(40vw, 90vh) rotate(270deg);
+            }
+            100% {
+                transform: translate(0, 0) rotate(360deg);
+            }
+        }
+
+        @keyframes flutter2 {
+            0% {
+                transform: translate(80vw, 90vh) rotate(0deg);
+            }
+            25% {
+                transform: translate(40vw, 50vh) rotate(90deg);
+            }
+            50% {
+                transform: translate(0vw, 10vh) rotate(180deg);
+            }
+            75% {
+                transform: translate(40vw, 50vh) rotate(270deg);
+            }
+            100% {
+                transform: translate(80vw, 90vh) rotate(360deg);
+            }
+        }
+
+        @keyframes flutter3 {
+            0% {
+                transform: translate(0vw, 50vh) rotate(0deg);
+            }
+            25% {
+                transform: translate(20vw, 70vh) rotate(90deg);
+            }
+            50% {
+                transform: translate(40vw, 90vh) rotate(180deg);
+            }
+            75% {
+                transform: translate(60vw, 70vh) rotate(270deg);
+            }
+            100% {
+                transform: translate(80vw, 50vh) rotate(360deg);
+            }
+        }
+
+        .mariposa1 {
+            animation: flutter1 10s infinite;
+        }
+
+        .mariposa2 {
+            animation: flutter2 12s infinite;
+        }
+
+        .mariposa3 {
+            animation: flutter3 15s infinite;
+        }
+
+        .mariposa4 {
+            animation: flutter1 18s infinite;
+        }
+
+        .mariposa5 {
+            animation: flutter2 20s infinite;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="poema">
+        <p>Tu beso me estremeció, todos mis sentidos,</p>
+        <p>despertando en mí un sentir especial,</p>
+        <p>un instante mágico, de sueños encendidos,</p>
+        <p>donde el tiempo se detuvo, donde todo fue real.</p>
+        <p>Paralizado quedé por la sorpresa,</p>
+        <p>no esperaba tu gesto en ese momento,</p>
+        <p>pero qué bueno que lo hiciste, sin promesa,</p>
+        <p>pues en tu beso encontré mi más dulce aliento.</p>
+    </div>
+
+    <div class="mariposa mariposa1" style="top: 10vh; left: 10vw;"></div>
+    <div class="mariposa mariposa2" style="top: 20vh; left: 20vw;"></div>
+    <div class="mariposa mariposa3" style="top: 30vh; left: 30vw;"></div>
+    <div class="mariposa mariposa4" style="top: 40vh; left: 40vw;"></div>
+    <div class="mariposa mariposa5" style="top: 50vh; left: 50vw;"></div>
+   
+
+ 
+    <a href="Prueba.html"></a>
+
+</body>
+
+</html>
